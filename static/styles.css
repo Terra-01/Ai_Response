@@ -1,0 +1,172 @@
+:root {
+    --ff-body: "Heebo", sans-serif;
+    --ff-heading: "Oswald", sans-serif;
+
+    --clr-primary-400: hsl(60 100% 50%);
+    --clr-neutral-900: hsl(0 0% 0%);
+    --clr-neutral-100: hsl(0 0% 100%);
+
+    --fs-xl: clamp(2.5rem, 9vw + 1rem, 9rem);
+    --fs-m: clamp(1rem, 5vw + 1rem, 5rem);
+    --fs-600: 2rem;
+    --fs-400: 1rem;
+    --underline: #e6a0fa;
+  }
+
+  @media (min-width: 40em) {
+    :root {
+      --fs-600: 3rem;
+      --fs-400: 1.125rem;
+    }
+  }
+
+body,
+h1,
+h2,
+p,
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+.flow > * + * {
+    margin-top: var(--flow-spacer, 1em);
+  }
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    line-height: 1.6;
+    background-image: url("/static/bg.jpg");
+  }
+
+
+  h1 {
+    font-size: var(--fs-xl);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color);
+    transition: all 200ms ease-out;
+  }
+
+  a:hover {
+    font-size: 1.2rem;
+  }
+
+  a:hover ~ hr {
+    width: 100%;
+  }
+
+  button {
+    text-decoration: none;
+    transition: all 200ms ease-out;
+  }
+
+  button:hover {
+    font-size: 1.5rem;
+  }
+
+  button:hover ~ hr {
+    width: 100%;
+  }
+
+  article {
+    display: grid;
+  }
+
+  article > *:not(img) {
+    padding: 0 2rem;
+  }
+
+  strong {
+    position: relative;
+  }
+
+  strong::before {
+    /* Highlight color */
+    background-color: #46b96c;
+
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 60%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-2deg);
+  }
+
+  .thought {
+    font-size: var(--fs-m);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .lead {
+    font-size: var(--fs-600);
+    line-height: 1.5;
+    margin-right: 0.5rem;
+  }
+
+  .article-body > p:first-child::first-letter {
+    font-size: 5em;
+    float: left;
+    line-height: 1.1;
+    margin-right: 0.5rem;
+  }
+
+  .article-body > p:first-child::first-line {
+    font-weight: 523;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  p.big {
+    line-height: 1.1;
+  }
+
+  .links {
+    width: 100%;
+  }
+
+  .links>a {
+    display: inline-block;
+    width: 3%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .highlight {
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    border-radius: 6px;
+    padding: 3px 6px;
+  }
+
+  @media (min-width: 60em) {
+    article {
+      grid-template-columns: min(40%, 40rem) 1fr;
+    }
+
+    article > img {
+      grid-row: 1 / 4;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    article > *:not(img) {
+      grid-column: 1 / -1;
+    }
+  }
