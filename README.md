@@ -1,8 +1,6 @@
 # This is Ai Response
 #### Video Demo:  <https://youtu.be/9rtJPLsuzI4>
 #### Description:
-> This program is made by Shivam Singh who is currently enrolled in Bachelor's of Computer Science with specialization in Data Science in the SRM Institute of Science and Technology, Kattankulathur, Tamil Nadu, India.
-
 This project uses the Open Ai API along with GPT-3 in the programming language of Python, Flask, HTML, Css and Jinja.
 The structure of the project is fairely simple, as the basic structure of a web-application should be.
 
