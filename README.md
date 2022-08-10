@@ -17,6 +17,9 @@ Lastly, in the static folder we have "bg.jpg" the background image that is displ
 Feel free to hit me up if you need anything.
 This was Ai Respnse.
 
+## Technology stacks and Api's Used:
+> Open AI's api, GPT-3, Python, JavaScript, HTML, CSS, Jinja and Flask.
+
 ## FAQ's:-
 
 ##### What is GPT-3?
